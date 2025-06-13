@@ -1,0 +1,230 @@
+body
+{
+    font-family: "Open Sans", sans-serif;
+}
+
+main
+{
+    min-width: 400px;
+    min-height: 600px;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255 240 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.letter
+{
+    display: flex;
+    width: 95%;
+    min-width: 300px;
+    height: 95%;
+    min-height: 40%;
+    background-color: rgb(121, 13, 13);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.initial-modal
+{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    background-color: rgba(241, 54, 54, 1);
+
+    transition-duration: 1.2s;
+}
+
+.initial-modal-main
+{
+    user-select: none;
+    color: white;
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.letter-cards-container
+{
+    display: flex;
+    width: 98%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.letter-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 5px;
+    justify-content: space-between;
+}
+
+
+.letter-l-card
+{
+    width: 50%;
+    height: 90%;
+    margin: 2px 5px 2px 2px;
+    background-color: white;
+    flex: 2;
+    transition-duration: 2s;
+}
+
+.letter-l-card:hover
+{
+    transition-duration: 0s;
+    animation: l-card-shake 1.8s infinite;
+}
+
+
+.letter-r-card
+{
+    width: 80%;
+    height: 95%;
+    margin: 2px 2px 2px 5px;
+    background-color: white;
+    flex: 3;
+
+    overflow-y: scroll;
+}
+
+.card-body
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-card-img
+{
+    margin: 0 10px;
+}
+
+
+.person-name
+{
+    font-family: "Leckerli One", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(87, 14, 11);
+}
+
+.person-subtitle
+{
+    text-align: center;
+}
+
+
+.r-card-title
+{
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    margin: 10px 0px;
+    color: rgb(87, 14, 11);
+}
+
+
+.text-body-justify
+{
+    text-align: justify;
+    margin: 5px 15px;
+    padding: 2px 20px;
+}
+
+.criminal-field-name
+{
+    font-style: bold;
+    color: rgb(167 131 156);
+}
+
+.crime-data-nome
+{
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.crime-list
+{
+    border-left: 2px solid rgb(30 30 30);
+    padding-left: 10px;
+}
+
+@keyframes l-card-shake
+{
+    55%
+    {
+        transform: rotate(0deg);
+    }
+
+    60%
+    {
+        transform: rotate(1.5deg);
+    }
+
+    65%
+    {
+        transform: rotate(-1.5deg);
+    }
+
+    70%
+    {
+        transform: rotate(1.5deg);
+    }
+
+    75%
+    {
+        transform: rotate(-1.5deg);
+    }
+
+    80%
+    {
+        transform: rotate(1.5deg);
+    }
+
+    85%
+    {
+        transform: rotate(-1.5deg);
+    }
+
+    90%
+    {
+        transform: rotate(1.5deg);
+    }
+
+    95%
+    {
+        transform: rotate(-1.5deg);
+    }
+
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
