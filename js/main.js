@@ -6,7 +6,7 @@ window.addEventListener("load", () =>
     const pictures =
     {
         current: 0,
-        src: ["static/may0.jpg", "static/may2.jpg"]
+        src: ["/static/may0.jpg", "/static/may2.jpg"]
     }
 
     const titles = 
